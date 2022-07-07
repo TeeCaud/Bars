@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2022_07_07_001524) do
     t.string "name"
     t.integer "quantity"
     t.boolean "alcohol"
-    t.datetime "created_at", null: false
+    t.datetime "created_at", null: false 
     t.datetime "updated_at", null: false
   end
 
