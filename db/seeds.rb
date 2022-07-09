@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Drink.destroy_all
+Bar.destroy_all
+
+
 sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
 chasers = Bar.create!(name: 'Chasers', specials: true, established: 2000, location: 'Lake Zurich')
 beer = sideouts.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)

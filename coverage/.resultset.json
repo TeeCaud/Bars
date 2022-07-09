@@ -246,12 +246,109 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/turingtjc/Turing/2Module/projects/bars/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/spec/features/bars/bars_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/spec/features/bars/drinks/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/spec/features/drinks/drinks_index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/spec/features/drinks/drinks_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/spec/models/bar_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
           null
         ]
       },
@@ -269,11 +366,27 @@
           null
         ]
       },
+      "/Users/turingtjc/Turing/2Module/projects/bars/spec/models/drink_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/app/models/drink.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/turingtjc/Turing/2Module/projects/bars/app/controllers/bars_controller.rb": {
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -288,8 +401,33 @@
           1,
           null
         ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/app/controllers/bar_drinks_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/2Module/projects/bars/app/controllers/drinks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1657318471
+    "timestamp": 1657324915
   }
 }
