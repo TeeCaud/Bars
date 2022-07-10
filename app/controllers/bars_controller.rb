@@ -7,5 +7,15 @@ class BarsController < ApplicationController
     @bar = Bar.find(params[:id])
   end
 
+  def new
+  end
 
+  def create
+    new_bar = Bar.create(bar_params)
+    redirect_to '/bars'
+  end
+
+  def bar_params
+    params.permit(:name, :specials, :established, :location)
+  end
 end
