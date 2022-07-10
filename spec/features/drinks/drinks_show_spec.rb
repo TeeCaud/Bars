@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'the drinks show page' do
   it 'it displays the drink id and attributes' do
-    bar = Bar.create!(name: 'Sideouts')
+    bar = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
     beer = bar.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
     vodka = bar.drinks.create!(name: 'Vodka', quantity: 35, alcohol: true)
     coke = bar.drinks.create!(name: 'Coke', quantity: 100, alcohol: false)

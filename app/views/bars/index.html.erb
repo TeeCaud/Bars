@@ -1,4 +1,8 @@
 <h1>Bars</h1>
-<% @bars.each do |bar| %>
-<p><h3><%= bar.name %></h3></p>
+
+<% @bars.each_with_index do |bar, index| %>
+<div id="bar-<%= index %>">
+<h3><%= bar.name %></h3>
+<p>Created at: <%= bar.created_at %></p>
+</div>
 <% end %>
