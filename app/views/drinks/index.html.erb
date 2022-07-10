@@ -1,7 +1,9 @@
+<%= link_to "Bars", "/bars" %>
+<%= link_to "Drinks", "/drinks" %>
+
 <h1>Drinks</h1>
 <% @drinks.each do |drink| %>
   <h3><%= drink.name %></h3>
   <p>Quantity on hand: <%= drink.quantity %></p>
   <p>Includes alcohol: <%= drink.alcohol %></p>
 <% end %>
- 

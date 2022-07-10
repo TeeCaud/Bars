@@ -14,4 +14,16 @@ RSpec.describe 'the drinks index page' do
     expect(page).to have_content(beer.quantity)
     expect(page).to have_content(beer.alcohol)
   end
+
+  it 'links to drinks index' do
+    bar = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
+    beer = bar.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
+    drinks = "/drinks"
+
+    visit "/bars"
+    click_on "Drinks"
+
+    expect(current_path).to eq("/drinks")
+  end
+
 end

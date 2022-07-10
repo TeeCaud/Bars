@@ -14,7 +14,6 @@ RSpec.describe 'the bars index page' do
     sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
     chasers = Bar.create!(name: 'Chasers', specials: true, established: 2000, location: 'Lake Zurich')
 
-
     visit "/bars"
 
     within '#bar-0' do
@@ -24,5 +23,16 @@ RSpec.describe 'the bars index page' do
     within '#bar-1' do
       expect(page).to have_content("Sideouts")
     end
+  end
+
+    it 'links to bars index' do
+      bar = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
+      beer = bar.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
+      bars = "/bars"
+
+      visit "drinks"
+      click_on "Bars"
+
+      expect(current_path).to eq("/bars")
   end
 end
