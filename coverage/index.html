@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-10T19:32:43-05:00">2022-07-10T19:32:43-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-10T21:40:09-05:00">2022-07-10T21:40:09-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  99.18%
 </span>
 
      </span>
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>30</b> files in total.
+    <b>31</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>232</b> relevant lines,
-    <span class="green"><b>232</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>243</b> relevant lines,
+    <span class="green"><b>241</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  99.18%
 </span>
 )
   </div>
@@ -83,11 +83,11 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#437b26805484f62e9b07b6d4554d045d1b0bda01" class="src_link" title="app/controllers/bar_drinks_controller.rb">app/controllers/bar_drinks_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0</td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">1</td>
             <td class="cell--number">1.50</td>
             
           </tr>
@@ -304,9 +304,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0c84406f3041e9047759508cdb093a6502c73aa7" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -364,6 +364,17 @@
             <td class="cell--number">16</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#aeb24e889a6c33dd5a70c21cdc6210c905edc29d" class="src_link" title="spec/features/drinks/new_spec.rb">spec/features/drinks/new_spec.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">87.50 %</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.88</td>
             
           </tr>
         
@@ -474,8 +485,8 @@
   <div class="header">
     <h3>app/controllers/bar_drinks_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  83.33%
 </span>
 
       lines covered
@@ -484,9 +495,9 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>6</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -530,8 +541,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="4">
+            <span class="hits">3</span>
             
 
             
@@ -541,8 +552,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="5">
+            <span class="hits">3</span>
             
 
             
@@ -564,6 +575,50 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    @bar = Bar.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -3920,8 +3975,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3961,7 +4016,7 @@
 
             
 
-            <code class="ruby">  get &#39;/drinks&#39;, to: &#39;drinks#index&#39;</code>
+            <code class="ruby">  get &#39;bars/:bar_id/drinks/new&#39;, to: &#39;drinks#new&#39;</code>
           </li>
         </div>
       
@@ -3972,7 +4027,7 @@
 
             
 
-            <code class="ruby">  get &#39;/drinks/:id&#39;, to: &#39;drinks#show&#39;</code>
+            <code class="ruby">  get &#39;/drinks&#39;, to: &#39;drinks#index&#39;</code>
           </li>
         </div>
       
@@ -3983,7 +4038,7 @@
 
             
 
-            <code class="ruby">  get &#39;/bars/new&#39;, to: &#39;bars#new&#39;</code>
+            <code class="ruby">  get &#39;/drinks/:id&#39;, to: &#39;drinks#show&#39;</code>
           </li>
         </div>
       
@@ -3994,7 +4049,7 @@
 
             
 
-            <code class="ruby">  get &#39;/bars&#39;, to: &#39;bars#index&#39;</code>
+            <code class="ruby">  get &#39;/bars/new&#39;, to: &#39;bars#new&#39;</code>
           </li>
         </div>
       
@@ -4005,7 +4060,7 @@
 
             
 
-            <code class="ruby">  get &#39;/bars/:id&#39;, to: &#39;bars#show&#39;</code>
+            <code class="ruby">  get &#39;/bars&#39;, to: &#39;bars#index&#39;</code>
           </li>
         </div>
       
@@ -4016,7 +4071,7 @@
 
             
 
-            <code class="ruby">  get &#39;/bars/:bar_id/drinks&#39;, to: &#39;bar_drinks#index&#39;</code>
+            <code class="ruby">  get &#39;/bars/:id&#39;, to: &#39;bars#show&#39;</code>
           </li>
         </div>
       
@@ -4027,7 +4082,7 @@
 
             
 
-            <code class="ruby">  post &#39;/bars&#39;, to: &#39;bars#create&#39;</code>
+            <code class="ruby">  get &#39;/bars/:bar_id/drinks&#39;, to: &#39;bar_drinks#index&#39;</code>
           </li>
         </div>
       
@@ -4038,7 +4093,7 @@
 
             
 
-            <code class="ruby">  get &#39;/bars/:id/edit&#39;, to: &#39;bars#edit&#39;</code>
+            <code class="ruby">  post &#39;/bars&#39;, to: &#39;bars#create&#39;</code>
           </li>
         </div>
       
@@ -4049,18 +4104,18 @@
 
             
 
-            <code class="ruby">  patch &#39;/bars/:id&#39;, to: &#39;bars#update&#39;</code>
+            <code class="ruby">  get &#39;/bars/:id/edit&#39;, to: &#39;bars#edit&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  patch &#39;/bars/:id&#39;, to: &#39;bars#update&#39;</code>
           </li>
         </div>
       
@@ -4077,6 +4132,17 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -6047,6 +6113,180 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="aeb24e889a6c33dd5a70c21cdc6210c905edc29d">
+  <div class="header">
+    <h3>spec/features/drinks/new_spec.rb</h3>
+    <h4>
+      <span class="yellow">
+  87.5%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>8</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;the drink creation&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;links to the new page&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    sideouts = Bar.create!(name: &#39;Sideouts&#39;, specials: false, established: 1970, location: &#39;Island Lake&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    whiskey = sideouts.drinks.create!(name: &#39;Whiskey&#39;, quantity: 150, alcohol: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &quot;/bars/#{sideouts.id}/drinks&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_link(&quot;Create Drink&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/bars/#{sideouts.id}/drinks/new&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
