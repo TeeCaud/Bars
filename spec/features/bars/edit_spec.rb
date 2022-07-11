@@ -5,7 +5,6 @@ RSpec.describe 'bar update' do
     sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
 
     visit "/bars/#{sideouts.id}"
-
     click_button "Update #{sideouts.name}"
 
     expect(current_path).to eq("/bars/#{sideouts.id}/edit")

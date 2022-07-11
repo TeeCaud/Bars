@@ -1,5 +1,7 @@
 <%= link_to "Bars", "/bars" %>
 <%= link_to "Drinks", "/drinks" %>
+<%= link_to "Create Drink", "/bars/#{@bar.id}/drinks/new" %>
+
 
 <h1>Drinks</h1>
 <% @drinks.each do |drink| %>

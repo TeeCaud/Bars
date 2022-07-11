@@ -14,5 +14,5 @@ RSpec.describe 'the drinks show page' do
     expect(page).to have_content(beer.id)
     expect(page).to have_content(beer.quantity)
     expect(page).to have_content(beer.alcohol)
+    end
   end
-end

@@ -1,0 +1,10 @@
+<%= form_with url: "/bars/#{@bar.id}/drinks", method: :post, local: true do |form| %>
+<%= form.label :name %>
+<%= form.text_field :name %>
+<%= form.label :alcohol %>
+<%= form.text_field :alcohol %>
+<%= form.label :quantity %>
+<%= form.text_field :quantity %>
+
+<%= form.submit "Create Drink" %>
+<% end %>

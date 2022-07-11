@@ -1,0 +1,11 @@
+<%= form_with url: "/drinks/#{@drink.id}", method: :patch, local: true do |form| %>
+
+<%= form.label :name %>
+<%= form.text_field :name %>
+<%= form.label :quantity %>
+<%= form.text_field :quantity %>
+<%= form.label :alcohol %>
+<%= form.text_field :alcohol %>
+
+<%= form.submit "Update Drink" %>
+<%end%>
