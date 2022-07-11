@@ -27,7 +27,7 @@ RSpec.describe 'the bars index page' do
 
     it 'links to bars index' do
       sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
-      beer = bar.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
+      beer = sideouts.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
       bars = "/bars"
 
       visit "drinks"

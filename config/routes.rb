@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   get '/bars/:id', to: 'bars#show'
   get '/bars/:bar_id/drinks', to: 'bar_drinks#index'
   post '/bars', to: 'bars#create'
+  get '/bars/:id/edit', to: 'bars#edit'
+  patch '/bars/:id', to: 'bars#update'
+
+
 end
