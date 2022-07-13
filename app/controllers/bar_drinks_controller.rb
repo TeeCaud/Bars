@@ -2,12 +2,14 @@ class BarDrinksController < ApplicationController
 
   def index
     @bar = Bar.find(params[:bar_id])
-    if params[:sort] == "asc"
-      @drinks = @bar.drinks.order(:name)
-    else
-      @drinks = @bar.drinks
+      if params[:sort] == "asc"
+        @drinks = @bar.drinks.order(:name)
+      elsif params[:filter]
+        @drinks = @bar.drinks.where("(quantity) > :filter", filter: params[:filter])
+      else
+        @drinks = @bar.drinks
+      end
     end
-  end
 
   def new
     @bar = Bar.find(params[:bar_id])
@@ -20,7 +22,7 @@ class BarDrinksController < ApplicationController
   end
 
   private
-    def bar_drinks_params
-      params.permit(:name, :quantity, :alcohol)
-    end
+  def bar_drinks_params
+    params.permit(:name, :quantity, :alcohol)
+  end
 end

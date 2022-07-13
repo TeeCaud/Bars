@@ -64,4 +64,21 @@ RSpec.describe 'Bars drinks index' do
       expect(current_path).to eq("/drinks/#{beer.id}/edit")
     end
   end
+
+  describe 'Display records over a given threshold' do
+    it 'has a form that allows a user to input a number value' do
+      sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
+      beer = sideouts.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
+      vodka = sideouts.drinks.create!(name: 'Vodka', quantity: 35, alcohol: true)
+
+      visit "/bars/#{sideouts.id}/drinks"
+      expect(current_path).to eq("/bars/#{sideouts.id}/drinks")
+      fill_in("filter", with: 100)
+      click_on "Search"
+
+      expect(current_path).to eq("/bars/#{sideouts.id}/drinks")
+      expect(page).to have_content(beer.name)
+      expect(page).to_not have_content(vodka.name)
+    end
+  end
 end
