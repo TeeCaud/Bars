@@ -5,9 +5,9 @@
 
 <h1>Drinks</h1>
 <br/><%= form_with url: "/bars/#{@bar.id}/drinks", method: :get, local: true do |form| %>
-<%= form.label :filter, "Only return records with more than" %>
-<%= form.text_field :filter %>
-<%= form.submit "Search" %>
+  <%= form.label :filter, "Only return records with more than" %>
+  <%= form.text_field :filter %> of drink's quantity on hand.
+  <%= form.submit "Search" %>
 <% end %>
 <br/>
 <div id="drinks_container">

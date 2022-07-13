@@ -23,8 +23,8 @@ class DrinksController < ApplicationController
     redirect_to "/drinks"
   end
 
-  private
-    def drink_params
-      params.permit(:name, :quantity, :alcohol)
-    end
+private
+  def drink_params
+    params.permit(:name, :quantity, :alcohol)
+  end
 end
