@@ -1,6 +1,6 @@
 class DrinksController < ApplicationController
   def index
-    @drinks = Drink.all.true_records
+    @drinks = Drink.true_records
   end
 
   def show
@@ -15,6 +15,12 @@ class DrinksController < ApplicationController
     drink = Drink.find(params[:id])
     drink.update(drink_params)
     redirect_to "/drinks/#{drink.id}"
+  end
+
+  def destroy
+    drink = Drink.find(params[:id])
+    drink.destroy
+    redirect_to "/drinks"
   end
 
   private

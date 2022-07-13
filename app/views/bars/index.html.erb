@@ -7,7 +7,9 @@
 
 <% @bars.each_with_index do |bar, index| %>
 <div id="bar-<%= index %>">
-<h3><%= bar.name %>   <%= link_to "Edit #{bar.name}", "/bars/#{bar.id}/edit" =%></h3>
+<h3><%= bar.name %></h3>
+  <%= link_to "Edit #{bar.name}", "/bars/#{bar.id}/edit" =%>
+  <%= link_to "Delete #{bar.name}", "/bars/#{bar.id}", method: :delete %>
 <p>Created at: <%= bar.created_at %></p>
 </div>
 <% end %>

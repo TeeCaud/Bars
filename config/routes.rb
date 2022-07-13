@@ -14,4 +14,7 @@ Rails.application.routes.draw do
   post '/bars/:bar_id/drinks', to: 'bar_drinks#create'
   get '/drinks/:drink_id/edit', to: 'drinks#edit'
   patch '/drinks/:id', to: 'drinks#update'
+  delete '/bars/:id', to: 'bars#destroy'
+  delete '/drinks/:id', to: 'drinks#destroy'
+  delete '/bars', to: 'bars#destroy'
 end

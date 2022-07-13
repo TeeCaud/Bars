@@ -4,6 +4,7 @@
 
 
 <p><%= button_to "Update #{@bar.name}", "/bars/#{@bar.id}/edit", method: :get %></p>
+<p><%= button_to "Delete #{@bar.name}", "/bars/#{@bar.id}", method: :delete %></p>
 <h1><%= @bar.name %></h1>
 <p>ID: <%= @bar.id %></p>
 <p>Bar: <%= @bar.name %></p>

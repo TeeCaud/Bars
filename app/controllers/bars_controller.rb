@@ -25,6 +25,12 @@ class BarsController < ApplicationController
     redirect_to "/bars/#{bar.id}"
   end
 
+  def destroy
+    bar = Bar.find(params[:id])
+    bar.destroy
+    redirect_to '/bars'
+  end
+
 private
   def bar_params
     params.permit(:name, :specials, :established, :location)

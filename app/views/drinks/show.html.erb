@@ -3,6 +3,7 @@
 <%= link_to "Update Drink", "/drinks/#{@drink.id}/edit" %>
 
 <p><%= button_to "Update #{@drink.name}", "/drinks/#{@drink.id}/edit", method: :get %></p>
+<p><%= button_to "Delete #{@drink.name}", "/drinks/#{@drink.id}", method: :delete %></p>
 <h1><%= @drink.name %></h1>
 <p>ID: <%= @drink.id %></p>
 <p>Quantity: <%= @drink.quantity %></p>
