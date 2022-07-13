@@ -3,7 +3,9 @@
 
 <h1>Drinks</h1>
 <% @drinks.each do |drink| %>
-  <h3><%= drink.name %></h3>  <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" =%>
+  <h3><%= drink.name %></h3>
+  <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" =%>
+  <%= link_to "Delete #{drink.name}", "/drinks/#{drink.id}", method: :delete %>
   <p>Quantity on hand: <%= drink.quantity %></p>
   <p>Includes alcohol: <%= drink.alcohol %></p>
 <% end %>

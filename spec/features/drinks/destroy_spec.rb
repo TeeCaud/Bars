@@ -11,4 +11,16 @@ RSpec.describe 'delete a drink' do
     expect(current_path).to eq ("/drinks")
     expect(page).to_not have_content("Beer")
   end
+
+  it 'can delete a drink from the index page' do
+    bar = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
+    beer = bar.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
+
+    visit '/drinks'
+    expect(current_path).to eq("/drinks")
+    expect(page).to have_content("Beer")
+    click_link "Delete #{beer.name}"
+    expect(current_path).to eq("/drinks")
+    expect(page).to_not have_content("Beer")
+  end
 end
