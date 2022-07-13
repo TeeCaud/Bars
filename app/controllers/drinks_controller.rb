@@ -1,6 +1,6 @@
 class DrinksController < ApplicationController
   def index
-    @drinks = Drink.all
+    @drinks = Drink.all.true_records
   end
 
   def show

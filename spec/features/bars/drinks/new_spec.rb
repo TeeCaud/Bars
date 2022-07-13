@@ -22,6 +22,7 @@ RSpec.describe 'the drink creation' do
     click_button('Create Drink')
 
     expect(current_path).to eq("/bars/#{sideouts.id}/drinks")
+    expect(page).to have_link('Create Drink')
     expect(page).to have_content("Whiskey")
   end
 end

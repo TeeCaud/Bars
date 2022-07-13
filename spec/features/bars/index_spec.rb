@@ -28,11 +28,20 @@ RSpec.describe 'the bars index page' do
     it 'links to bars index' do
       sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
       beer = sideouts.drinks.create!(name: 'Beer', quantity: 10000, alcohol: true)
-      bars = "/bars"
 
-      visit "drinks"
+      visit "/drinks"
       click_on "Bars"
 
       expect(current_path).to eq("/bars")
+  end
+
+  it 'has a link next to every bar to update it' do
+    sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
+    chasers = Bar.create!(name: 'Chasers', specials: true, established: 2000, location: 'Lake Zurich')
+
+    visit '/bars'
+    click_on "Edit #{sideouts.name}"
+
+    expect(current_path).to eq("/bars/#{sideouts.id}/edit")
   end
 end

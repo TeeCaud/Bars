@@ -3,7 +3,7 @@
 
 <h1>Drinks</h1>
 <% @drinks.each do |drink| %>
-  <h3><%= drink.name %></h3>
+  <h3><%= drink.name %></h3>  <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" =%>
   <p>Quantity on hand: <%= drink.quantity %></p>
   <p>Includes alcohol: <%= drink.alcohol %></p>
 <% end %>

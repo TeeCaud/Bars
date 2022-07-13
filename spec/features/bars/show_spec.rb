@@ -39,4 +39,17 @@ RSpec.describe 'the bars show page' do
 
     expect(current_path).to eq("/bars/#{sideouts.id}/drinks")
   end
+
+  describe 'delete a bar' do
+    it 'can delete a bar from the show page' do
+      sideouts = Bar.create!(name: 'Sideouts', specials: false, established: 1970, location: 'Island Lake')
+
+      "visit" "bars/#{sideouts.id}"
+
+      click_on "Delete #{sideouts.name}"
+
+      expect(current_path).to eq("/bars/#{sideouts.id}")
+
+    end
+  end
 end
